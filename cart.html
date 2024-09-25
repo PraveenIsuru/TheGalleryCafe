@@ -1,12 +1,101 @@
-<html>
-    <head>
-        <title>Cart</title>
-    </head>
-    <body>
-        <div class="cart">
-            <i class="fa-solid fa-cart-shopping"></i>
+<html lang="en" class="html">
+<head>
+    <link rel="stylesheet" href="style.css">
 
-            
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="cart">
+        <div class="row">
+            <div class="navbar" style="height: 10%;">
+                <div class="navbaritems">
+                    <div class="column" style="width: 20%;">
+                        <div style="text-align: center;">
+                            <a href="menu.html">
+                                <button class="backtohome">Back to Menu</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="column" style="width: 50%;">
+                        <div>
+                            <input class="srch" style="width: 80%;" type="search" name="" placeholder="Search Here...">
+                            <a href="#"><button class="searchbutton">Search</button></a><br>
+                        </div>
+                    </div>
+
+                    <div class="column" style="width: 30%; text-align: center;">
+                        <a href="login.html" class="button" style="color: aliceblue; text-decoration: none;">
+                            <button class="signbutton" style="background: transparent; color: aliceblue;">Login</button>
+                        </a>
+                        <a href="signUp.html" class="button">
+                            <button class="signbutton" style="background-color: rgb(255, 255, 255);">Sign Up</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </body>
+
+        <div style="padding-top: 2%; padding-left: 8%; padding-right: 8%;">
+            <table style="text-align: center; width: 100%; font-size: 18;">
+                <tr style="font-size: 20px; font-family: jost">
+                    <th class="itmdelete"></th>
+                    <th class="itmname" style="text-align: left;">Item Name</th>
+                    <th class="itmprice">Price</th>
+                    <th class="nuofitem">Number of Items</th>
+                    <th class="tot">Total</th>
+                </tr>
+                <tr>
+                    <td><button class="crtbtn"><i class="fa-regular fa-trash-can" style="color: #ff0000;"></i></button></td>
+                    <td style="text-align: left;">Chicken Penne Pasta</td>
+                    <td>1390.00LKR</td>
+                    <td><input type="number" value="1" class="itminput"></td>
+                    <td style="text-align: right;">2720.00LKR</td>
+                </tr>
+                <tr>
+                    <td><button class="crtbtn"><i class="fa-regular fa-trash-can" style="color: #ff0000;"></i></button></td>
+                    <td style="text-align: left;">Chicken Penne Pasta</td>
+                    <td>1390.00LKR</td>
+                    <td><input type="number" value="1" class="itminput"></td>
+                    <td style="text-align: right;">2720.00LKR</td>
+                </tr>
+                <tr>
+                    <td><button class="crtbtn"><i class="fa-regular fa-trash-can" style="color: #ff0000;"></i></button></td>
+                    <td style="text-align: left;">Chicken Penne Pasta</td>
+                    <td>1390.00LKR</td>
+                    <td><input type="number" value="1" class="itminput"></td>
+                    <td style="text-align: right;">2720.00LKR</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="padding-top: 7%;"></td>
+                    <td class="total" style="text-align: center;">Total :</td>
+                    <td class="total" style="text-align: right;">4800.00LKR</td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align: right; padding-top: 2%;">
+            <div style="padding-right: 8%;">
+                <button class="cartbtn" style="color: antiquewhite; background-color: transparent; border-color: antiquewhite; border-radius: 5px; font-weight: 300;">Clear Cart</button>
+                <button class="cartbtn" style="background-color: #02c847; border: none; border-radius: 5px;">Confirm Order</button>
+            </div>
+        </div>
+       
+    </div>
+</body>
 </html>

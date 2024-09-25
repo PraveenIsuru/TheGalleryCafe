@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>SignUp</title>
+        <title>Login</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,46 +8,33 @@
     </head>
 
     <body>
-        <div class="signup">
+        <div class="login">
             <div class="row">
                 <div class="column" style="width: 30%; height: 10px;"></div>
                 <div class="column" style="width: 40%;">
                     <div style="text-align: center; padding-top: 40px; padding-bottom: 25px;">
                         <img src="Images/icon.png" alt="CafeLogo" style="width: 180px;">
                     </div>
-                    <div class="card" style="background-color: #2d2d2d; height: 530px; border-radius: 3px;">
-                        <div style="font-size: 30px; font-weight: bold; font-family: inter; text-align: center; padding-top: 20px; color: EBE6E0;">Join with Us</div>
-                        <div style="font-size: 12px; font-weight: 300; font-family: inter; text-align: center; padding-top: 3px; color: EBE6E0;">Start By Creating Your Account</div>
+                    <div class="card" style="background-color: #2d2d2d; height: 350px; border-radius: 3px;">
+                        <div style="font-size: 30px; font-weight: bold; font-family: inter; text-align: center; padding-top: 20px; color: EBE6E0;">Welcome Back</div>
+                        <div style="font-size: 12px; font-weight: 300; font-family: inter; text-align: center; padding-top: 3px; color: EBE6E0;">Please sign in to your Account</div>
                         <form action="#" style="font-family: inter; padding-block: 20px; padding-inline: 80px;">
-                            <div class="inputfield">
-                                <label for="fname" class="label">First Name :</label><br>
-                                <input class="textarea" type="text" id="fname" name="First Name"><br>
-                            </div>
-
-                            <div class="inputfield">
-                                <label for="lname" class="label">Last Name :</label><br>
-                                <input class="textarea" type="text" id="lname" name="Last Name"><br>
-                            </div>
-
                             <div class="inputfield">
                                 <label for="email" class="label">Email Address :</label><br>
                                 <input class="textarea" type="email" id="email" name="Email Address"><br>
                             </div>
 
                             <div class="inputfield">
-                                <label for="phone" class="label">Phone Number :</label><br>
-                                <input class="textarea" type="text" id="phone" name="phone"><br>
-                            </div>
-
-                            <div class="inputfield">
-                                <label for="Password" class="label">Password :</label><br>
+                                <label for="password" class="label">Password :</label><br>
                                 <input class="textarea" type="password" id="password" name="psswrd"><br>
                             </div>
                             <div style="text-align: center; padding-top: 15px;">
-                                <button type="submit" class="submitbtn" name="submit" id="submit">Sign Up</button>
+                                <a href="index.php" class="button">
+                                    <button type="submit" class="signupbtn" name="submit" id="submit">Login</button>
+                                </a>
                             </div>
                             <div style="text-align: center; padding-top: 15px; color: aliceblue; font-size: 14px;">
-                                Already have an Account? <a href="login.html" style="color: #009677; ">Sign In</a>
+                                Don't you have an Account? <a href="signUp.php" style="color: #009677; ">Sign Up</a>
                             </div>
                         </form>
                     </div>
